@@ -1,0 +1,22 @@
+{
+  "name": "fccpetsurvey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixelfairy7/FCC-Pet-Survey.git"
+  },
+  "author": "Erika Myles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pixelfairy7/FCC-Pet-Survey/issues"
+  },
+  "homepage": "https://github.com/Pixelfairy7/FCC-Pet-Survey#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
