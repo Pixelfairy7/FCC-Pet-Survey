@@ -11,26 +11,26 @@
     <div class="container">
         <header>
             <h1 id="title" class="header">Doggo Adoption Form</h1>
-            <p id="description">A mock dog adoption form.</p>
+            <p id="description" class="copy copy-heading">A mock dog adoption form.</p>
         </header>
         <main>
-            <form id="survey-form">
-                <div class="personal-info">
+            <form id="survey-form" class="form-body">
+                <div class="personal-info copy">
                     <label for="name" id="name-label" >Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter Name" required>
                     <label for="email" id="email-label">Email:</label>
                     <input type="email"  name="email" id="email" placeholder="Enter email" required>
                 </div>
                 <div class="household-info">
-                    <p>Have you owned a dog before?</p>
+                    <p class="copy">Have you owned a dog before?</p>
                     <input type="radio" id="yes" name="owned" value ="yes">
                     <label for="yes">Yes</label>
                     <input type="radio" id="no" name="owned" value ="no">
                     <label for="no">No</label>
-                    <p>If so, how many?</p>
+                    <p class="copy">If so, how many?</p>
                     <label for="number" id="number-label"># of dogs:</label>
                     <input type="number" id="number" min="0" max="50" placeholder="1" required>
-                    <p>What type of housing do you reside in?</p>
+                    <p class="copy">What type of housing do you reside in?</p>
                     <label for="housing">Select Housing:</label>
                     <select name="housing" id="dropdown">
                         <option value="">--Please choose an option--</option>
@@ -40,7 +40,7 @@
                     </select>
                 </div>
                 <div class="pet-info">
-                    <p>What type of activity level are you looking for in a dog?</p>
+                    <p class="copy">What type of activity level are you looking for in a dog?</p>
                     <input type="checkbox" id="low" name="low" value="low">
                     <label for="low">Low</label>
                     <input type="checkbox" id="average" name="average" value="average">

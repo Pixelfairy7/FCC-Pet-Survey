@@ -1,5 +1,38 @@
+// Variables: 
+$header-font:'Comfortaa', cursive;
+$body-font:'Roboto', sans-serif;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+}
+.form-body{
+    border: 1px solid purple;
+    width: 80%;
+    margin: auto;
+}
+    .header{
+        font-family: $header-font;
+        font-size: 3rem;
+        padding: 2rem;
+        border: 1px solid pink;
+    }
+    .copy{
+        font-family:$body-font;
+        padding: 1rem;
+    }
+    .copy-heading{
+        font-weight: 700;
+    }
+
+    .household-info, .pet-info, .personal-info{
+        padding: 40px;
+        border: 1px solid coral;
+    }

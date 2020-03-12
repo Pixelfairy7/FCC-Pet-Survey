@@ -2,3 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  text-align: center; }
+
+.form-body {
+  border: 1px solid purple;
+  width: 80%;
+  margin: auto; }
+
+.header {
+  font-family: "Comfortaa", cursive;
+  font-size: 3rem;
+  padding: 2rem;
+  border: 1px solid pink; }
+
+.copy {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem; }
+
+.copy-heading {
+  font-weight: 700; }
+
+.household-info, .pet-info, .personal-info {
+  padding: 40px;
+  border: 1px solid coral; }
