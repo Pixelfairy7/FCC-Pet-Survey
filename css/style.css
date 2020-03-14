@@ -2,3 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #a29bfe; }
+
+header {
+  text-align: center; }
+
+.section-header {
+  text-align: center;
+  font-family: "Comfortaa", cursive; }
+
+.form-body {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 14px 15px 5px -5px rgba(0, 0, 0, 0.51); }
+
+.header {
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+  font-size: 3rem;
+  padding: 2rem;
+  margin-bottom: 1em; }
+
+.copy {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  text-align: center; }
+
+.copy-heading {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff; }
+
+.household-info, .pet-info, .personal-info {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column; }
+  .household-info .question-box, .pet-info .question-box, .personal-info .question-box {
+    text-align: center;
+    align-items: flex-start; }
+    .household-info .question-box label, .pet-info .question-box label, .personal-info .question-box label {
+      font-size: 1.3rem; }
+
+.personal-info input {
+  width: 200px;
+  height: 35px;
+  border: .5px solid #a29bfe; }
+
+.household-info .num-input {
+  width: 60px;
+  height: 35px;
+  border: .5px solid #a29bfe; }
+
+.submit {
+  display: flex;
+  justify-content: center; }
+  .submit button {
+    padding: 10px 20px;
+    margin: 25px;
+    border-radius: 5px;
+    background-color: #a29bfe; }
