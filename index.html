@@ -16,20 +16,27 @@
         <main>
             <form id="survey-form" class="form-body">
                 <div class="personal-info copy">
-                    <label for="name" id="name-label" >Name:</label>
+                    <h2 class="section-header">Personal Info</h2>
+                    <div class="question-box">
+                        <label for="name" id="name-label" >Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter Name" required>
                     <label for="email" id="email-label">Email:</label>
                     <input type="email"  name="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    
                 </div>
                 <div class="household-info">
+                    <h2 class="section-header">Household Info</h2>
+                    
                     <p class="copy">Have you owned a dog before?</p>
-                    <input type="radio" id="yes" name="owned" value ="yes">
-                    <label for="yes">Yes</label>
+                <div class="question-box">
+                    <label for="yes" class="copy">Yes</label>
+                    <input type="radio" id="yes" name="owned" value ="yes" class="copy">
+                    <label for="no" class="copy">No</label>
                     <input type="radio" id="no" name="owned" value ="no">
-                    <label for="no">No</label>
                     <p class="copy">If so, how many?</p>
-                    <label for="number" id="number-label"># of dogs:</label>
-                    <input type="number" id="number" min="0" max="50" placeholder="1" required>
+                    <label for="number" id="number-label" class="copy"># of dogs:</label>
+                    <input type="number" id="number" min="0" max="50" placeholder="1" class="num-input" required>
                     <p class="copy">What type of housing do you reside in?</p>
                     <label for="housing">Select Housing:</label>
                     <select name="housing" id="dropdown">
@@ -39,8 +46,11 @@
                         <option value="twn">Townhome/Condo  </option>
                     </select>
                 </div>
+                </div>
                 <div class="pet-info">
+                    <h2 class="section-header">Pet Info</h2>
                     <p class="copy">What type of activity level are you looking for in a dog?</p>
+                    <div class="question-box copy">
                     <input type="checkbox" id="low" name="low" value="low">
                     <label for="low">Low</label>
                     <input type="checkbox" id="average" name="average" value="average">
@@ -49,8 +59,10 @@
                     <label for="high">Very High</label>
                     <p>Do you have a breed preference?</p>
 
-                    <p>Why do you feel your home would be a good match for an adopted dog?</p>
-                    <label for="info">Let us know below:</label>
+                    </div>
+                    
+                    <p class="copy">Why do you feel your home would be a good match for an adopted dog?</p>
+                    <label for="info" class="copy">Let us know below:</label>
                     <textarea name="info" id="info" cols="30" rows="10"></textarea>
                 </div>
                 

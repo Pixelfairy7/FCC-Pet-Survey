@@ -1,38 +1,92 @@
 // Variables: 
 $header-font:'Comfortaa', cursive;
+$header-font-color: #fff;
 $body-font:'Roboto', sans-serif;
+$body-font-color: #fff;
+$body-background: #a29bfe;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 .container{
     display: flex;
     flex-direction: column;
+    background-color: $body-background;
 }
 header{
     text-align: center;
 }
+.section-header{
+    text-align: center;
+    font-family: $header-font;
+}
 .form-body{
-    border: 1px solid purple;
+   
     width: 80%;
     margin: auto;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 14px 15px 5px -5px rgba(0,0,0,0.51);
 }
     .header{
         font-family: $header-font;
+        color: $header-font-color;
         font-size: 3rem;
         padding: 2rem;
-        border: 1px solid pink;
+        margin-bottom: 1em;
     }
     .copy{
         font-family:$body-font;
         padding: 1rem;
+        text-align: center;
     }
     .copy-heading{
+        font-family: $header-font;
         font-weight: 700;
+        font-size: 3rem;
+        color: $header-font-color;
     }
 
     .household-info, .pet-info, .personal-info{
-        padding: 40px;
-        border: 1px solid coral;
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        .question-box{
+            text-align: center;
+            align-items: flex-start;
+            label {
+                font-size: 1.3rem;
+            }
+           
+        }
+        
+    }
+
+    .personal-info {
+        input{
+            width: 200px;
+            height: 35px;
+            border: .5px solid #a29bfe;
+        }
+    }
+
+    .household-info {
+        .num-input{
+            width: 60px;
+            height: 35px;
+            border: .5px solid #a29bfe;
+        }
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+        button{
+            padding: 10px 20px;
+            margin: 25px;
+            border-radius: 5px;
+            background-color: $body-background;
+        }
     }
